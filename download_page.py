@@ -32,3 +32,5 @@ def ticker():
         secs = dur[0] * 3600 + dur[1] * 60 + dur[2]
         time.sleep(secs)
         download_page()
+
+ticker()

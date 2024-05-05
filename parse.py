@@ -33,5 +33,3 @@ def get_trains() -> str:
         for train in params:
             timetable.append(train)
     return "".join(params for params in timetable)
-
-print(get_trains())
