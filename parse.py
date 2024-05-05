@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
 
+
 def get_trains() -> str:
     f = open("page.html")
     text = f.read()
@@ -31,3 +32,5 @@ def get_trains() -> str:
         for train in params:
             timetable.append(train)
     return "".join(params for params in timetable)
+
+print(get_trains())

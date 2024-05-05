@@ -24,8 +24,9 @@ async def start_handler(message: Message) -> None:
 async def timetable_get_handler(message: Message) -> None:
     try:
         await message.answer(parse.get_trains())
-    except:
+    except Exception as e:
         print("Brrrr, I Can`t, *(")
+        print(e)
 
 
 async def main() -> None:
