@@ -9,8 +9,9 @@ def get_trains() -> str:
     timetable = []
     soup = BeautifulSoup(text, "html.parser")
 
+    date = soup.find('span', class_='SearchTitle__subtitle')
     blocks = soup.find_all('tr', class_='SearchSegment SearchSegments__segment')
-    date = blocks[0].find('div', class_='TableTimeAndStations__date')
+
 
     timetable.append(f'{date.text}\n')
     timetable.append("==================================================\n")
