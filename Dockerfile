@@ -1,10 +1,8 @@
-FROM python:3
+FROM python:alpine
 
 WORKDIR /app
 COPY . /app
 
-RUN pip install beautifulsoup4
-RUN pip install aiogram
-RUN pip install requests
+RUN pip install beautifulsoup4 aiogram requests
 
-CMD ["sudo", "sh", "run.sh"]
+CMD ["sh", "run.sh"]
