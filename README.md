@@ -4,7 +4,7 @@ Bot, which can give Timetable of train from University to Saint-Petersburg(Balti
 
 ## Getting started
 
-At first, you need to build image with(Don`t forget paste the token in **config.json**)
+At first, you need to build image with
 
 ```
 docker build -t nameofimage .
